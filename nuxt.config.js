@@ -29,12 +29,17 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/scss/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    {
+      src: '~/plugins/octokit',
+      ssr: true,
+    }
   ],
   /*
   ** Auto import components

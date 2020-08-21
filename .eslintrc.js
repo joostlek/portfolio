@@ -14,5 +14,9 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'space-before-function-paren': 'off',
+    semi: 'off',
+    'comma-dangle': 'off'
+  }
 }
