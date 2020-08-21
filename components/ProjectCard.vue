@@ -5,7 +5,7 @@
       <p>
         {{ project.description }}
       </p>
-      <div v-if="!!project.github" class="badges">
+      <div v-if="!loading" class="badges">
         <Badge :count="project.github.stars" type="stars" />
         <Badge :count="project.github.forks" type="forks" />
       </div>
@@ -24,8 +24,14 @@ export default {
       required: true
     }
   },
+  data: () => ({
+    loading: true,
+  }),
   async mounted () {
-    await this.getGithubInfo();
+    if (this.project.githubRepository) {
+      await this.getGithubInfo();
+    }
+    this.loading = false;
   },
   methods: {
     async getGithubInfo() {

@@ -1,13 +1,17 @@
 <template>
   <div class="container">
+    <Heading />
+    <AboutMe />
     <ProjectOverview :projects="projects" />
   </div>
 </template>
 
 <script>
 import ProjectOverview from '@/components/ProjectOverview'
+import Heading from '@/components/Heading'
+import AboutMe from '@/components/AboutMe'
 export default {
-  components: { ProjectOverview },
+  components: { AboutMe, Heading, ProjectOverview },
   async asyncData (ctx) {
     const projects = await ctx.$content('projects').fetch()
     return { projects }

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h4>My Projects</h4>
+    <h3>My Projects</h3>
     <div class="card-container">
       <ProjectCard v-for="(project, idx) in projects" :key="idx" :project="project" class="card" />
     </div>
@@ -25,6 +25,7 @@ export default {
 .container {
   width: 100%;
   height: 100%;
+  margin-top: 40px;
 }
 .card-container {
   padding-top: 1em;
