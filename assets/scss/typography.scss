@@ -4,18 +4,54 @@ h1 {
   font-family: 'Roboto Slab', serif;
   font-size: 100px;
   font-weight: lighter;
+  line-height: 140%;
+  font-style: normal;
+  margin-bottom: 0;
+  color: var(--text-color);
+
+  @media screen and (max-width: $bp-tablet-md) {
+    font-size: 44px;
+  }
+
+  @media screen and (max-width: $bp-mobile-lg) {
+    font-size: 24px;
+  }
 }
 
 h2 {
   font-family: 'Roboto Slab', serif;
   font-size: 48px;
   font-weight: lighter;
+  line-height: 140%;
+  font-style: normal;
+  margin-bottom: 0;
+  color: var(--text-color);
+
+  @media screen and (max-width: $bp-tablet-md) {
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: $bp-mobile-lg) {
+    font-size: 20px;
+  }
 }
 
 h3 {
   font-family: 'Roboto Slab', serif;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: lighter;
+  line-height: 140%;
+  font-style: normal;
+  margin-bottom: 0;
+  color: var(--text-color);
+
+  @media screen and (max-width: $bp-tablet-md) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: $bp-mobile-lg) {
+    font-size: 16px;
+  }
 }
 
 h4 {

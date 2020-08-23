@@ -58,7 +58,8 @@ export default {
   */
   modules: [
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/style-resources'
   ],
   /*
   ** Content module configuration
@@ -70,5 +71,10 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+  },
+  styleResources: {
+    scss: [
+      './assets/scss/variables.scss'
+    ]
   }
 }
