@@ -13,6 +13,7 @@
   "dependencies": {
     "@nuxt/content": "^1.5.0",
     "@octokit/rest": "^18.0.3",
+    "@qonfucius/nuxt-prometheus-module": "^0.1.1",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {

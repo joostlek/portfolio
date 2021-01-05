@@ -59,7 +59,17 @@ export default {
   modules: [
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    [
+      '@qonfucius/nuxt-prometheus-module',
+      {
+        port: 9091,
+        host: '0.0.0.0',
+        metrics: {
+          collectDefault: true,
+          requestDuration: true,
+        },
+      }]
   ],
   /*
   ** Content module configuration
